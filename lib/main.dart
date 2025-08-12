@@ -163,6 +163,7 @@ class _ReminderAppState extends State<ReminderApp> {
                   msg: "Reminder for '${item['title']}' has been set",
                   toastLength: Toast.LENGTH_SHORT,
                 );
+
                 _triggerPush(item['title']!);
               },
               child: Container(
